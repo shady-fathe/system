@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+        <nav>
+            <ul>
+                <li class="Home">Home</li>
+                <li>PS</li>
+                <li>PC</li>
+                <li>Drinkes</li>
+                <li>Reset</li>
+            </ul>
+        </nav>
+        <!-- section 1 -->
+        <section class="se-1">
+            <div class="se-1-d-trget">
+                <div class="target-circle ">
+                    <p class="target-percint"></p>
+                    <p id="Prosses-Target-Number"></p>
+                </div>
+                <div class="target-ope">
+                    <h1>Target</h1>
+                    <p id="TargetNumber"></p>
+                    <button class="btn-Target" onclick="openPopupTarget()">Change</button>
+                </div>
+            </div>
+            <div class="popup-target">
+                <div class="popup-target-header">
+                    <button class="btn-Target-popup-Exit" onclick="popupExit()">x</button>
+                    <h2>Target</h2>
+                </div>
+                <input type="number" placeholder="Type Valid Number"  maxlength="0">
+                <div class="popup-number-group">
+                    <button class="popup-number"  value="9">9</button>
+                    <button class="popup-number"  value="8">8</button>
+                    <button class="popup-number"  value="7">7</button>
+                    <button class="popup-number"  value="6">6</button>
+                    <button class="popup-number"  value="5">5</button>
+                    <button class="popup-number"  value="4">4</button>
+                    <button class="popup-number"  value="3">3</button>
+                    <button class="popup-number"  value="2">2</button>
+                    <button class="popup-number"  value="1">1</button>
+                    <button class="popup-btn-delete" >></button>
+                    <button class="popup-number"  value="0">0</button>
+                    <button class="popup-btn-delete-all" >C</button>
+                </div>
+                <button class="btn-Set-Target">Set Target</button>
+            </div>
+            <!-- div-2 -->
+            <!-- <div class="se-1-d-trget">
+                <div class="target-circle">
+                    <p class="target-percint">70%</p>
+                    <p id="Prosses-Target-Number">$5000</p>
+                </div>
+                <div class="target-ope">
+                    <h1>Target</h1>
+                    <p id="TargetNumber">$7000</p>
+                    <button class="btn-Target">Change</button>
+                </div>
+            </div> -->
+
+            <!-- section 2 -->
+        </section>
+        <section class="se-2">
+            <div class="se-2-d-1 div-control">
+                <h1>PC</h1>
+                <i class="fa-solid fa-desktop"></i>
+                <p>0</p>
+                <button class="btn-mange">mange</button>
+            </div>
+            <div class="se-2-d-2 div-control">
+                <h1>PS</h1>
+                <i class="fa-brands fa-playstation"></i>
+                <p>0</p>
+                <button class="btn-mange">mange</button>
+            </div>
+            <div class="se-2-d-3 div-control">
+                <h1>DR</h1>
+                <i class="fa-solid fa-martini-glass-citrus"></i>
+                <p>0</p>
+                <button class="btn-mange">mange</button>
+            </div>
+
+        </section>
+
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>
