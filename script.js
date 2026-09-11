@@ -13,13 +13,20 @@ let BtnPopupNumber = document.querySelectorAll(".popup-number");
 let PopupBtnDelete = document.querySelector(".popup-btn-delete");
 let PopupBtnDeleteAll = document.querySelector(".popup-btn-delete-all");
 let btnSetTarget = document.querySelector(".btn-Set-Target");
-let MainTarget;
+let MainTarget = localStorage.getItem("Target");
 let percint;
-let ProssesTarget = 100;
+let ProssesTarget = localStorage.getItem("ProssesTarget");
 
+
+function updateValues(){
+   MainTargetNumber.textContent = "$" + MainTarget;
+  ProssesTargetNumber.textContent = "$" + ProssesTarget;
+  targetpercint.textContent = percint + "%"; 
 if (popupTargetinput.value === "") {
   MainTarget = 0;
 }
+}
+
 // Target functions
 // Function Remove popup
 function popupExit() {
@@ -32,6 +39,7 @@ function openPopupTarget() {
   popuptarget.style.opacity = 1;
   popuptarget.style.pointerEvents = "auto";
   popupTargetinput.setAttribute("placeholder", "Type Valid number");
+  
 }
 // add Numbers and Delete in popup target
 function addDeleteNm() {
@@ -65,7 +73,7 @@ function addDeleteNm() {
   };
 }
 
-function TargetValus() {
+ function TargetValus() {
   if (JSON.parse(localStorage.getItem("Target") === null)) {
     JSON.stringify(localStorage.setItem("Target", 0));
   } else {
@@ -79,10 +87,10 @@ function TargetValus() {
   } else if (MainTarget === "") {
     MainTarget = 0;
   }
-  MainTargetNumber.textContent = "$" + MainTarget;
-  ProssesTargetNumber.textContent = "$" + ProssesTarget;
-  targetpercint.textContent = percint + "%";
+updateValues()
 }
-  
+
+
+updateValues();
 addDeleteNm();
 TargetValus();

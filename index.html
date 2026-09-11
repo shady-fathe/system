@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>System</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" /> -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,13 +14,14 @@
     <main>
         <nav>
             <ul>
-                <li class="Home">Home</li>
-                <li>PS</li>
-                <li>PC</li>
-                <li>Drinkes</li>
-                <li>Reset</li>
+                <a><li class="active-nav">Home</li></a>
+                <a href="#"><li>PS</li></a>
+                <a href="pags/pc.html" target="_blank"><li>pc</li></a>
+                <a href="#"><li>Drinkes</li></a>
+                <a href="#"><li>Reset</li></a>
             </ul>
         </nav>
+
         <!-- section 1 -->
         <section class="se-1">
             <div class="se-1-d-trget">
@@ -39,20 +40,20 @@
                     <button class="btn-Target-popup-Exit" onclick="popupExit()">x</button>
                     <h2>Target</h2>
                 </div>
-                <input type="number" placeholder="Type Valid Number"  maxlength="0">
+                <input type="number" placeholder="Type Valid Number" maxlength="0">
                 <div class="popup-number-group">
-                    <button class="popup-number"  value="9">9</button>
-                    <button class="popup-number"  value="8">8</button>
-                    <button class="popup-number"  value="7">7</button>
-                    <button class="popup-number"  value="6">6</button>
-                    <button class="popup-number"  value="5">5</button>
-                    <button class="popup-number"  value="4">4</button>
-                    <button class="popup-number"  value="3">3</button>
-                    <button class="popup-number"  value="2">2</button>
-                    <button class="popup-number"  value="1">1</button>
-                    <button class="popup-btn-delete" >></button>
-                    <button class="popup-number"  value="0">0</button>
-                    <button class="popup-btn-delete-all" >C</button>
+                    <button class="popup-number" value="9">9</button>
+                    <button class="popup-number" value="8">8</button>
+                    <button class="popup-number" value="7">7</button>
+                    <button class="popup-number" value="6">6</button>
+                    <button class="popup-number" value="5">5</button>
+                    <button class="popup-number" value="4">4</button>
+                    <button class="popup-number" value="3">3</button>
+                    <button class="popup-number" value="2">2</button>
+                    <button class="popup-number" value="1">1</button>
+                    <button class="popup-btn-delete">></button>
+                    <button class="popup-number" value="0">0</button>
+                    <button class="popup-btn-delete-all">C</button>
                 </div>
                 <button class="btn-Set-Target">Set Target</button>
             </div>
@@ -75,24 +76,151 @@
             <div class="se-2-d-1 div-control">
                 <h1>PC</h1>
                 <i class="fa-solid fa-desktop"></i>
-                <p>0</p>
+                <div class="se-2-d-body">
+                    <div class="body-d-numbers">
+                        <div>
+                            <h1 class="small-H">Offline</h1>
+                            <h1 class="small-H">Online</h1>
+                        </div>
+                        <div>
+                            <p>10</p>
+                            <p>5</p>
+                        </div>
+                    </div>
+                    <div class="body-d-itme">
+                        <div class="pc-bar-status">
+                            <div class="status-header">
+                                <p>ID</p>
+                                <p>Station</p>
+                                <p>Time</p>
+                            </div>
+                            <div class="itme-status">
+                                <p>0</p>
+                                <p>5</p>
+                                <p>5:30</p>
+                            </div>
+                            <div class="itme-status">
+                                <p>1</p>
+                                <p>3</p>
+                                <p>5:30</p>
+                            </div>
+                            <div class="itme-status">
+                                <p>2</p>
+                                <p>3</p>
+                                <p>5:30</p>
+                            </div>
+                            <div class="itme-status">
+                                <p>3</p>
+                                <p>3</p>
+                                <p>5:30</p>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
                 <button class="btn-mange">mange</button>
             </div>
             <div class="se-2-d-2 div-control">
                 <h1>PS</h1>
                 <i class="fa-brands fa-playstation"></i>
-                <p>0</p>
+                <div class="se-2-d-body">
+                    <div class="body-d-numbers">
+                        <div>
+                            <h1 class="small-H">Offline</h1>
+                            <h1 class="small-H">Online</h1>
+                        </div>
+                        <div>
+                            <p>10</p>
+                            <p>5</p>                        </div>
+                    </div>
+                    <div class="body-d-itme">
+                        <div class="pc-bar-status">
+                            <div class="status-header">
+                                <p>ID</p>
+                                <p>Station</p>
+                                <p>Time</p>
+                            </div>
+                            <div class="itme-status">
+                                <p>0</p>
+                                <p>5</p>
+                                <p>5:30</p>
+                            </div>
+                            <div class="itme-status">
+                                <p>1</p>
+                                <p>3</p>
+                                <p>5:30</p>
+                            </div>
+                            <div class="itme-status">
+                                <p>2</p>
+                                <p>3</p>
+                                <p>5:30</p>
+                            </div>
+                            <div class="itme-status">
+                                <p>3</p>
+                                <p>3</p>
+                                <p>5:30</p>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
                 <button class="btn-mange">mange</button>
             </div>
             <div class="se-2-d-3 div-control">
                 <h1>DR</h1>
                 <i class="fa-solid fa-martini-glass-citrus"></i>
-                <p>0</p>
+                <div class="se-2-d-body">
+                    <div class="body-d-drinks">
+                        <div>
+                            <h1 class="small-H">Totoal</h1>
+                            <h1 class="small-H">Selling</h1>
+                        </div>
+                        <div>
+                            <p>15</p>
+                            <p>$150</p>
+                        </div>
+                    </div>
+                    <div class="body-d-itme">
+                        <div class="pc-bar-status">
+                            <div class="status-header">
+                                <p>ID</p>
+                                <p>Drink</p>
+                                <p>Station</p>
+                            </div>
+                            <div class="itme-status">
+                                <p>0</p>
+                                <p>sting</p>
+                                <p>5</p>
+                            </div>
+                            <div class="itme-status">
+                                <p>1</p>
+                                <p>Fury</p>
+                                <p>4</p>
+                            </div>
+                            <div class="itme-status">
+                                <p>2</p>
+                                <p>Red Bull</p>
+                                <p>6</p>
+                            </div>
+                            <div class="itme-status">
+                                <p>3</p>
+                                <p>Mounster</p>
+                                <p>2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <button class="btn-mange">mange</button>
             </div>
-
         </section>
-
     </main>
 </body>
 <script src="script.js"></script>
